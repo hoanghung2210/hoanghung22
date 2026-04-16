@@ -1,1 +1,64 @@
+circle.py
+import math
 
+radius = float(input("Enter the radius: "))
+circumference = 2 * math.pi * radius
+print("The circumference is:", circumference)
+
+
+greet.py
+name = input("enter your name: ")
+print(f"Hello, {name}!")
+
+lock_code.py
+import random
+
+code_3 = [random.randint(0, 9) for _ in range(3)]
+code_4 = [random.randint(1, 6) for _ in range(4)]
+
+print("3-digit code:", code_3)
+print("4-digit code:", code_4)
+
+
+number.py
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+total = a + b + c
+product = a * b * c
+average = total / 3
+
+print("Sum:", total)
+print("Product:", product)
+print("Average:", average)
+
+
+rectangle.py
+length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+
+perimeter = 2 * (length + width)
+area = length * width
+
+print("Perimeter:", perimeter)
+print("Area:", area)
+
+
+test.py
+print("Python chạy trong VS Code")
+
+
+weight_converter.py
+talents = float(input("Enter talents: "))
+pounds = float(input("Enter pounds: "))
+lots = float(input("Enter lots: "))
+
+total_lots = talents * 20 * 32 + pounds * 32 + lots
+total_grams = total_lots * 13.3
+
+kilograms = int(total_grams // 1000)
+grams = total_grams % 1000
+
+print("The weight in modern units:")
+print(f"{kilograms} kilograms and {grams:.2f} grams.")
